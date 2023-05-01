@@ -1,2 +1,2 @@
 # DiabetesDetection_Using_Ensemble_methods
-This a simple project done for Fuse machines 
+This is a simple machine learning project that predicts whether a patient has diabetes or not. Three ensemble models were used to predict diabetes, and a majority voting approach was employed to produce the final output.The datasets consist of several medical predictor (independent) variables and one target (dependent) variable, Outcome. Independent variables include the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
