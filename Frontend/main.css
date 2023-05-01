@@ -96,12 +96,13 @@ label {
 }
 
 .but:hover {
-	background-color: rgb(92, 89, 89);
-	color: black;
+	opacity: 0.1;
+	color: rgb(0, 0, 0);
 }
 .but:active {
+	opacity:0.9;
 	background-color: rgb(10, 10, 10);
-	color: rgb(108, 106, 106);
+	color: rgb(255, 251, 251);
 }
 
 #output {
