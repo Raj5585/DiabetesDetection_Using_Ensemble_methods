@@ -19,8 +19,11 @@ function submit() {
 	 input6 = document.getElementById("input6").value;
 	 input7 = document.getElementById("input7").value;
      input8 = document.getElementById("input8").value;
+     console.log(input1,input2);
 
 }
+
+document.getElementById('output').innerHTML = "You have Diabetes! Take care of your health. "
 
 $(document).ready(function() {
     // Load the model using Pickle.js
@@ -40,6 +43,7 @@ $(document).ready(function() {
         
             
             console.log(prediction);
+      
 
             document.getElementById('output').innerHTML = prediction?"Diabetes":"No Diabetes";
 

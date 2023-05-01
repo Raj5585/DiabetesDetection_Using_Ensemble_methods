@@ -1,7 +1,13 @@
+body{
+	background-color: rgb(188, 181, 181);
+}
 nav {
-	background-color: #333;
+	background-color: #6a6767;
 	color: white;
-	padding: 10px;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: -1px -2px 21px -6px rgba(0,0,0,0.74);
+	
 }
 
 nav ul {
@@ -12,7 +18,7 @@ nav ul {
 }
 
 nav li {
-	float: left;
+	float: right;
 }
 
 nav li a {
@@ -21,6 +27,14 @@ nav li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-size: large;
+	margin-right: 15px;
+}
+nav li a:hover{
+	border: 1px solid #6a6767;
+	background-color: white;
+	color: black;
+	border-radius: 10px;
 }
 
 h1 {
@@ -40,29 +54,47 @@ form {
 
 label {
 	margin-top: 10px;
+	font-size: large;
 }
 
 input[type="text"] {
 	margin-top: 5px;
 	margin-bottom: 10px;
-	padding: 5px;
-	border-radius: 5px;
+	padding: 10px;
+	border-radius: 15px;
 	border: none;
+	border: 1px white;
+}
+input:hover{
+	
+	border-radius: 25px;
+	border: 1px solid black;
 }
 
 button {
 	margin-top: 10px;
 	padding: 5px;
-	border-radius: 5px;
+	border-radius: 15px;
 	border: none;
-	background-color: #333;
+	background-color: black;
 	color: white;
-	font-size: 16px;
+	font-size: 20px;
 	cursor: pointer;
+}
+button:hover{
+	background-color: white;
+	border-radius: 25px;
+	color: black;
 }
 
 #output {
 	margin-top: 20px;
 	padding: 10px;
-	border: 1px solid #333;
+	border: 0.5px solid #333;
+	border-radius: 25px;
+	text-align: center;
+	color: black;
+	font-size: 20px;
+	background-color: snow;
+
 }
