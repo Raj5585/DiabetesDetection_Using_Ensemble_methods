@@ -31,7 +31,7 @@ nav li a {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+
 	text-decoration: none;
 	font-size: large;
 	margin-right: 15px;
@@ -54,69 +54,67 @@ h1 {
 }
 
 form {
-	left: 10%;
-
-	position: relative;
-	display: flex;
-	flex-direction: row;
-
-	flex-wrap: wrap;
-	
-
+position: absolute;
+top: 39%;
+display: flex;
+justify-content: center;
+gap: 60px;
+flex-wrap: wrap;
+width:30%;
 }
+
+input{
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+}
+
 
 label {
-	position: relative;
-	margin-top: 10px;
-	font-size: large;
-	color: black;
-	font-weight: bolder;
-	
+	color: rgb(255, 255, 255);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-input[type="text"] {
-	position: relative;
-	margin-top: 5px;
-	margin-bottom: 10px;
-	padding: 10px;
-	border-radius: 15px;
-	border: none;
-	border: 1px white;
-	width: 200px;
-	
-}
-input:hover{
-	
-	border-radius: 25px;
-	border: 1px solid black;
-}
-
-button {
-	margin-top: 10px;
-	padding: 5px;
-	border-radius: 15px;
-	border: none;
+.but {
+	position: absolute;
+	top: 55%;
+	left: 58%;
 	background-color: black;
-	color: white;
-	font-size: 20px;
-	cursor: pointer;
-	width: 200px;
+	width: 110px;
+	height:110px;
+	line-height: 110px;
+	border-radius: 50%;
+
+	border: none;
+  color: rgb(237, 237, 238);
+  text-decoration: none;
+  text-align: center;
+  
+  
+  display: inline-block;
+  font-size: 20px;
 }
-button:hover{
-	background-color: white;
-	border-radius: 25px;
+
+.but:hover {
+	background-color: rgb(92, 89, 89);
 	color: black;
+}
+.but:active {
+	background-color: rgb(10, 10, 10);
+	color: rgb(108, 106, 106);
 }
 
 #output {
-	margin-top: 20px;
-	padding: 10px;
-	border: 0.5px solid #333;
-	border-radius: 25px;
-	text-align: center;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	background-color: rgb(249, 248, 248);
 	color: black;
-	font-size: 20px;
-	background-color: snow;
-	width: 200px;
-
+	width: 110px;
+	height:110px;
+	line-height: 110px;
+	border-radius: 50%;
+	text-align: center;
+	font-weight: bolder;
+	font-size: larger;
 }

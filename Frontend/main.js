@@ -23,7 +23,7 @@ function submit() {
 
 }
 
-document.getElementById('output').innerHTML = "You have Diabetes! Take care of your health. "
+document.getElementById('output').innerHTML = "Sad!! "
 
 $(document).ready(function() {
     // Load the model using Pickle.js

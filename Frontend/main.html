@@ -19,41 +19,57 @@
 
 		</ul>
 	</nav>
-	
-	<div class="container">
-		
+			
 		<form>
-			<label for="input1">Glucose Level:</label>
-			<input type="text" id="input1" placeholder="121"><br>
+			<div>
+				<label for="input1">Glucose Level:</label><br>
+				<input type="text" id="input1" placeholder="121"><br>
+			</div>
+			
+			
+			<div>
+				<label for="input2">BloodPressure:</label><br>
+				<input type="text" id="input2"  placeholder="72"><br>
+			</div>
 
-			<label for="input2">BloodPressure:</label>
-			<input type="text" id="input2"  placeholder="72"><br>
+			<div>
+				<label for="input3">SkinThickness	:</label><br>
+				<input type="text" id="input3" placeholder="26"><br>
+			</div>
 
-			<label for="input3">SkinThickness	:</label>
-			<input type="text" id="input3" placeholder="26"><br>
+			<div>
+				<label for="input4">Insulin Level:</label><br>
+				<input type="text" id="input4" placeholder="118"><br>
+			</div>
 
-			<label for="input4">Insulin Level:</label>
-			<input type="text" id="input4" placeholder="118"><br>
+			<div>
+				<label for="input5">BMI:</label><br>
+				<input type="text" id="input5" placeholder="32"><br>
+			</div>
 
-			<label for="input5">BMI:</label>
-			<input type="text" id="input5" placeholder="32"><br>
+			<div>
+				<label for="input6">DiabetesPedigreeFunction:</label><br>
+				<input type="text" id="input6" placeholder="0.47"><br>
 
-			<label for="input6">DiabetesPedigreeFunction:</label>
-			<input type="text" id="input6" placeholder="0.47"><br>
+			</div>
 
-			<label for="input7">Age:</label>
-			<input type="text" id="input7" placeholder="33"><br>
-            
-            <label for="input7">No. of Pregnencies:</label>
-			<input type="text" id="input8" placeholder="3"><br>
+			<div>
+				<label for="input7">Age:</label><br>
+				<input type="text" id="input7" placeholder="33"><br>
 
-			<button type="button" onclick="submit()">Submit</button>
+			</div>
+			
+			<div>
+				<label for="input7">No. of Pregnencies:</label><br>
+				<input type="text" id="input8" placeholder="3"><br>
+			</div>
+
 		</form>
+			<div class="but" onclick="submit()">
+				Submit
+			</div>
 
-		<div id="opt_div">
 		<p id="output"></p>
-		</div>
-	</div>
 
 	<script src="main.js"></script>
 
