@@ -2,11 +2,8 @@
 <html>
 <head>
 	<title>DiabetesDetection</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='main.css') }}"/>
 	
-    <script src="
-    https://cdn.jsdelivr.net/npm/chromium-pickle-js@0.2.0/lib/exports.min.js
-    "></script>
 </head>
 <body>
 	<nav id="nav_bar">
@@ -20,67 +17,71 @@
 		</ul>
 	</nav>
 			
-		<form>
+		<form id="my-form" >
 			<div>
 				<label for="input1">Glucose Level:</label><br>
-				<input type="text" id="input1" placeholder="121"><br>
+				<input type="text" placeholder="121" name="Glucose"><br>
 			</div>
-			
 			
 			<div>
 				<label for="input2">BloodPressure:</label><br>
-				<input type="text" id="input2"  placeholder="72"><br>
+				<input type="text" placeholder="72" name="BloodPressure"><br>
 			</div>
 
 			<div>
 				<label for="input3">SkinThickness	:</label><br>
-				<input type="text" id="input3" placeholder="26"><br>
+				<input type="text" placeholder="26" name="SkinThickness"><br>
 			</div>
 
 			<div>
 				<label for="input4">Insulin Level:</label><br>
-				<input type="text" id="input4" placeholder="118"><br>
+				<input type="text" placeholder="118" name="Insulin"><br>
 			</div>
 
 			<div>
 				<label for="input5">BMI:</label><br>
-				<input type="text" id="input5" placeholder="32"><br>
+				<input type="text" placeholder="32" name="BMI"><br>
+
 			</div>
 
 			<div>
 				<label for="input6">DiabetesPedigreeFunction:</label><br>
-				<input type="text" id="input6" placeholder="0.47"><br>
+				<input type="text" placeholder="0.47" name="DiabetesPedigreeFunction"><br>
 
 			</div>
 
 			<div>
 				<label for="input7">Age:</label><br>
-				<input type="text" id="input7" placeholder="33"><br>
+				<input type="text" placeholder="33" name="Age"><br>
 
 			</div>
-			
+
 			<div>
 				<label for="input7">No. of Pregnencies:</label><br>
-				<input type="text" id="input8" placeholder="3"><br>
+				<input type="text" placeholder="3" name="Pregnancies"><br>
+
 			</div>
 
-		</form>
-			<div class="but" onclick="submit()">
-				Submit
+
+			<div class="but">
+				<button type="submit" id="submit-btn">Submit</button>
 			</div>
+		</form>
 
 		<p id="output"></p>
 
-	<script src="main.js"></script>
+	<!-- import the main.js from the static folder  -->
+	<script src="{{ url_for('static',filename='main.js') }}"></script>
+
 
 <!-- Your HTML content with input and output fields -->
 	<!-- Include jQuery, Lodash, Base64, and Pkl-js libraries using CDN -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-base64/3.6.0/base64.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/pkl-js@1.4.0/pkl.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-base64/3.6.0/base64.min.js"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/pkl-js@1.4.0/pkl.min.js"></script> -->
 	<!-- Your custom JS code to load and use the model using Pickle.js -->
-	<script src="path/to/your/custom/js/file.js"></script>
+	<!-- <script src="path/to/your/custom/js/file.js"></script> -->
 
 </body>
 </html>

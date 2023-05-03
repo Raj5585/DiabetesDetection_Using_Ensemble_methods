@@ -2,7 +2,7 @@ body{
 margin: 0;
 padding: 0;
 
-background-image: url("../bgimage.jpg");
+background-image: url("bgimage.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -82,10 +82,10 @@ label {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.but {
+#submit-btn {
 	position: absolute;
-	top: 55%;
-	left: 58.3%;
+	top: 21%;
+	left: 194.3%;
 	background-color: black;
 	width: 110px;
 	height:110px;
