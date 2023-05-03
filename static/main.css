@@ -7,49 +7,26 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 nav {
-	opacity: 0.5;
-	background-color: #6a6767;
-	color: white;
-	padding: 20px;
-	border-radius: 15px;
-	box-shadow: -1px -2px 21px -6px rgba(0,0,0,0.74);
-	
-}
-
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+	margin: 20px;
 	display: flex;
-	flex-direction: row-reverse;
+	gap:25px;
 	justify-content: center;
-	gap: 25px;
+	backdrop-filter: blur(0.8);
 	
 }
 
-nav li {
-	float: right;
-}
-
-nav li a {
-	display: block;
-	color: white;
-	text-align: center;
-
-	text-decoration: none;
-	font-size: large;
-	margin-right: 15px;
+.nav-btn{
+	margin:10px;
+  position: relative;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: rgb(238, 238, 238);
+  border: none;
+  font-size: larger;
 	
 }
-nav li a:hover{
 
-	background-color: white;
-	color: black;
-	border-radius: 5px;
-	
-	
-}
+
 
 h1 {
 	text-align: center;
